@@ -3,7 +3,7 @@ name: Daily Bible Verse
 on:
   schedule:
     # 8:00 по Москве (UTC+3) = 5:00 UTC. Поменяй под себя.
-    - cron: "0 5 * * *"
+    - cron: "0 3 * * *"
   workflow_dispatch: {}  # позволяет запустить вручную кнопкой "Run workflow"
 
 jobs:
