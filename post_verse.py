@@ -44,7 +44,7 @@ VERSES = [
 
 def main():
     ref, text = random.choice(VERSES)
-    message = f"📖 {ref}\n\n«{text}»"
+    message = f"{ref}\n\n«{text}»"
 
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
     response = requests.post(url, data={"chat_id": CHANNEL_ID, "text": message})
